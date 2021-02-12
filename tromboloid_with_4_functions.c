@@ -18,7 +18,7 @@ void print(float vol)
   
 int main()
 {
-  printf("enter b ");
+  printf("enter h ");
   float h=input();
   printf("enter b");
   float b=input();
