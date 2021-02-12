@@ -4,40 +4,40 @@
 #include<math.h>
 struct Input_1
 {
-    double x,y;
+    float x,y;
 };
-double inputx()
+float inputx()
 {
-    double x;
-    scanf("%lf",&x);
+    float x;
+    scanf("%f",&x);
     return x;
 }
-double inputy()
+float inputy()
 {
-    double y;
-    scanf("%lf",&y);
+    float y;
+    scanf("%f",&y);
     return y;
 }
-double calculation(double x1,double x2,double y1, double y2)
+float calculation(float x1,float x2,float y1, float y2)
 { 
     return(sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1))));
 }
-void print(double distance)
+void print(float distance)
 {
-    printf("The distance is:%lf",distance);  
+    printf("The distance is = %f",distance);  
 }
 int main()
 {   
     struct Input_1 I1,I2;
-    printf("enter x1 ");
+    printf("enter cordinate x1 ");
     I1.x=inputx();
-    printf("enter y1 ");
+    printf("enter cordinate y1 ");
     I1.y=inputy();
-    printf("enter x2 ");
+    printf("enter cordinate x2 ");
     I2.x=inputx();
-    printf("enter y2 ");
+    printf("enter cordinate  y2 ");
     I2.y=inputy();
-    double distance=calculation(I1.x,I1.y,I2.x,I2.y);
+    float distance=calculation(I1.x,I1.y,I2.x,I2.y);
     print(distance);
     return 0;
 }
